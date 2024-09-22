@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -21,12 +21,17 @@ body{
     --background-color:black;
 
   }
-  .protest-guerrilla-regular {
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: 400;
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
     font-style: normal;
-    letter-spacing: 2px;
+    
   }
+  .icon-nav{
+    font-size: 1.2vw !important;
+  }
+  
+  
   
     .navbar{
         position: sticky;
@@ -34,7 +39,7 @@ body{
         
     }
     a.nav-link{
-        
+        margin-left: 2vw;
         font-weight: 900 !important;
         border-radius: 10px;
         color: var(--primary-color) !important;
@@ -75,13 +80,28 @@ div.home{
     width: 19vw;  
     height: 23vw;
     background-image:url(./images/profile.png);
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat; 
-    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 0 3px 1px blue(255, 255, 255, 0.8); 
+    animation: pulse 1.5s infinite alternate;
     
     }
+    div.profile-img:hover{
+        filter: brightness(1.2);
+    }
+
+    @keyframes pulse {
+        from {
+            box-shadow: 0 0 4px 2px white;
+        }
+        to {
+            box-shadow: 0 0 6px 3px skyblue;
+            border: 1px solid skyblue;
+        }
+    }
+    
     
 
 figcaption.animate{
@@ -90,7 +110,7 @@ figcaption.animate{
 }
 
 figcaption.animate p{
-    color:white;
+    color:orange;
     font-weight: 900 !important;
     font-size: 2rem;
     opacity: 0;
@@ -135,27 +155,44 @@ section#about{
     position: relative;
     margin: auto;
     padding-top: 5vh;  
-    padding-bottom: 5vh;  
+      
+}
+.outer-card{
+    width:17vw;
+    height:22vw; 
+    border-radius: 2vw;
+    border: 1px solid white
 }
 
 div.about-img{
     background-image: url(./images/about.png);
+    background-color: black;
+    opacity: 0.8;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 22vw;
-    height: 22vw;
+    width: 16.8vw;
+    height: 17vw;
     margin: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.8); 
-    animation: pulse 1.5s infinite alternate;
+    z-index: -1;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
 }
-@keyframes pulse {
-    from {
-        box-shadow: 0 0 2px 1px white;
-    }
-    to {
-        box-shadow: 0 0 4px 2px greenyellow;
-    }
+div.about-img:hover{
+    opacity: 1.0;
+}
+.my-name{
+    background-color: black;
+    opacity: 0.7;
+}
+
+div.about-img:hover{
+    opacity: 1.0;
+}
+.sur-name{
+    background-color: black;
+    opacity: 0.7;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
 }
 
 div.about{
@@ -163,11 +200,12 @@ div.about{
     margin-bottom: 0%;
     font-size: 1.3rem;
 }
+
 div.about p{
     margin-bottom: 0%;
 }
 button.cv{
-    background-color: aqua; 
+    
     display: flex;
     margin: auto;
     animation-delay: 10s;
@@ -188,9 +226,10 @@ section#skills{
     top: 90%;
     transform: translate(-50%, -50%);
     font-weight: 700;
-    color: blue; 
+    color: rgb(14, 244, 91); 
     letter-spacing: 2px;
-    text-shadow: 1px 1px 2px BLUE;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black;
     
 }
 .hide-on-load{
@@ -203,14 +242,14 @@ section#skills{
 }
 .card:hover .hide-on-load{
     display: block;
+    
 }
 
-
-
 div.card{
-    width: 180px;
-    height: 230px;
-    margin-top: 20px;
+   
+    width: 10.5rem;
+    height: 13.5rem;
+    margin-top: 1rem;
     border: 1px solid black;
     box-shadow:2px 2px 8px black;
     background-image: linear-gradient(rgb(22, 195, 22), white);
@@ -227,21 +266,21 @@ div.card-img-top{
 }
 
 div.skill{
-    width: 160px;
-    height: 30px;
-    border: 1px solid black;  
-    box-shadow: 1px 1px 4px black;   
+    width: 90%;
+    height: 30px;   
+    border: 1px solid grey;   
+    border-radius: 0.3vw;
 }
 
 div.range{
     height: 100%;
     color: white;
     font-weight: 900;
+    border-radius: 0.3vw;
 }
 img.skill-card{
-    width: 176px;
-    height: 176px;
-    
+    width: 9.9rem;
+    height: 10rem; 
     cursor: pointer;
 }   
 
@@ -253,8 +292,8 @@ img.skill-card{
 section#projects{
    
     position: relative;  
-    padding-top: 5vh;
-    padding-bottom: 2vh;
+    padding-top: 1vh;
+   
 }
 
 
@@ -292,14 +331,8 @@ section#projects{
                 /*contact section*/
 
 section#contact{
-   
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    
+    padding-top: 5vh;  
 }
-
-
-
      /*section footer*/
 
      #footer{
@@ -311,7 +344,6 @@ section#contact{
      i.bi{
         font-size: 30px;
         border-radius: 60%;
-      
     }
     i bi:hover{
         cursor: all-scroll;
@@ -327,11 +359,12 @@ section#contact{
         padding-top: 2vh;  
         padding-bottom: 2vh;  
     }
+    .icon-nav{
+        font-size: 2.4vw !important;
+      }
 
     section#skills{
-   
-        padding-top: 2vh;
-        padding-bottom: 2vh;
+        padding-top: 10vh;     
         position: relative;
     }
 
@@ -351,32 +384,47 @@ section#contact{
       margin: auto;
       margin-top: 0%;  
      } 
+
+     .outer-card{
+        padding-bottom: 0px;
+        width:35.2vw;
+        height:43vw; 
+        margin: auto;
+        
+    }
    
      div.about-img{ 
       width: 35vw;
       height: 35vw;
-      display: flex;
       margin: auto;
-      margin-top: 5vh;
+         
      }
 
      figcaption.animate p{
-      font-size: medium !important;
+      font-size:3vw;
      }
      div.card{
       margin: auto;
+     }
+     .card-row{
+        margin: auto !important;
      }
   }
       /*media-screen 576px*/
 
   @media screen and (max-width:576px) {
-
+    section{
+        overflow-x: hidden;
+    }
+    .icon-nav{
+        font-size: 4.5vw !important;
+      }
     div.profile-img{     
       width: 45vw;
       height: 50vw;     
     }
     section#home{
-      padding-bottom: 5vh;
+      padding-bottom: 2vh;
       
     }
     div.home{  
@@ -387,26 +435,42 @@ section#contact{
       font-size: 1.5rem !important;
       
     }
+   
      h1.name{
       margin: auto;
-      margin-top: 0%;
-      
+      margin-top: 0%;    
      } 
-    
+     .outer-card{
+        padding-bottom: 0%;
+        width:50.2vw;
+        height:65vw; 
+        margin: auto;   
+    }
      div.about-img{ 
       width: 50vw;
       height: 50vw ;
-      display: flex;
       margin: auto;
-      margin-top: 5vw;
+      
      }
 
      figcaption.animate p{
-      font-size: medium !important;
-     }
-     div.card{
-      margin: auto;
+      font-size: 4vw;
      }
 
+     section#skills{
+        margin-top: 0vh;
+        padding-top: 1vh;     
+     }
+     section#contact{
+        padding-top: 0vh;
+     }
+
+     div.card{
+     margin: auto;    
+     }
+
+     .show-on-load{
+        bottom: 0%;
+     }
   }
   
