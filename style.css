@@ -175,7 +175,7 @@ div.about-img{
     margin: auto;
     z-index: -1;
     border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
+    border-top-right-radius: 2vw;  
 }
 div.about-img:hover{
     opacity: 1.0;
@@ -229,8 +229,7 @@ section#skills{
     color: rgb(14, 244, 91); 
     letter-spacing: 2px;
     font-weight: 900;
-    text-shadow: 1px 1px 1px black;
-    
+    text-shadow: 1px 1px 1px black;   
 }
 .hide-on-load{
     display: none;
@@ -241,8 +240,7 @@ section#skills{
     font-size: 0px;
 }
 .card:hover .hide-on-load{
-    display: block;
-    
+    display: block;   
 }
 
 div.card{
@@ -284,16 +282,12 @@ img.skill-card{
     cursor: pointer;
 }   
 
-
-
                /* project Section*/
 
 
-section#projects{
-   
+section#projects{ 
     position: relative;  
-    padding-top: 1vh;
-   
+    padding-top: 1vh;  
 }
 
 
@@ -304,7 +298,6 @@ section#projects{
 }
 .large-device:hover{
     transform: scale(1.05);
-
 }
 
 .medium-device{
@@ -312,19 +305,17 @@ section#projects{
     height: 71%;
     transition:transform 0.3s ease-in-out;
 }
+
 .medium-device:hover{
-    transform: scale(1.05);
-    
+    transform: scale(1.05);  
 }
 .small-device{
     width: 90%;
     height: 90%;
     transition: transform 0.3s ease-in-out;
-
 }
 .small-device:hover{
-    transform: scale(1.05);
-    
+    transform: scale(1.05);   
 }
 
 
@@ -368,7 +359,6 @@ section#contact{
         position: relative;
     }
 
-    
     div.profile-img{     
       width: 32vw ;
       height: 40vw;     
@@ -389,15 +379,13 @@ section#contact{
         padding-bottom: 0px;
         width:35.2vw;
         height:43vw; 
-        margin: auto;
-        
+        margin: auto;   
     }
    
      div.about-img{ 
       width: 35vw;
       height: 35vw;
-      margin: auto;
-         
+      margin: auto;  
      }
 
      figcaption.animate p{
@@ -443,11 +431,11 @@ section#contact{
      .outer-card{
         padding-bottom: 0%;
         width:50.2vw;
-        height:65vw; 
+        height:auto; 
         margin: auto;   
     }
      div.about-img{ 
-      width: 50vw;
+      width: 49vw;
       height: 50vw ;
       margin: auto;
       
@@ -472,5 +460,10 @@ section#contact{
      .show-on-load{
         bottom: 0%;
      }
+     img.skill-card{
+        width: 9.9rem;
+        height: 10rem; 
+        cursor: pointer;
+    }  
   }
   
