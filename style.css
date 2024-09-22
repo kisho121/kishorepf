@@ -161,13 +161,15 @@ section#about{
     width:17vw;
     height:22vw; 
     border-radius: 2vw;
-    border: 1px solid white
+    border: 1px solid white;
+}
+.outer-card:hover{
+    filter: brightness(1.2)
 }
 
 div.about-img{
     background-image: url(./images/about.png);
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgb(9, 9, 67);
     background-size: cover;
     background-repeat: no-repeat;
     width: 16.8vw;
@@ -175,22 +177,26 @@ div.about-img{
     margin: auto;
     z-index: -1;
     border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;  
+    border-top-right-radius: 2vw; 
+    opacity: 0.8; 
 }
 div.about-img:hover{
-    opacity: 1.0;
+    background-color: aqua;
 }
 .my-name{
-    background-color: black;
-    opacity: 0.7;
+    background-color:  white;
+    
+    color: rgb(9, 9, 67);
+    
 }
 
 div.about-img:hover{
     opacity: 1.0;
 }
 .sur-name{
-    background-color: black;
-    opacity: 0.7;
+    background-color: white;
+    
+    color: rgb(9, 9, 67);
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
 }
