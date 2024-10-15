@@ -19,8 +19,8 @@ body{
     --font-size-small: 1rem;
     --bg-image: linear-gradient(rgb(4, 160, 208) rgb(82, 113, 122));
     --background-color:black;
-
   }
+
   .poppins-black {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
@@ -31,12 +31,9 @@ body{
     font-size: 1.2vw !important;
   }
   
-  
-  
     .navbar{
         position: sticky;
-        background-image: linear-gradient(rgb(6, 6, 16), rgb(28, 6, 61));
-        
+        background-image: linear-gradient(rgb(6, 6, 16), rgb(28, 6, 61)); 
     }
     a.nav-link{
         margin-left: 2vw;
@@ -58,18 +55,22 @@ section{
     background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     overflow-x: hidden;
-    background-size: cover;
-
-    
+    background-size: cover;    
 }
 
            /*Home Section*/
 section#home{ 
     position: relative;
     padding-top: 10vh;
-    padding-bottom: 5vh;
-    height: fit-content;
-    
+    padding-bottom: 10vh; 
+}
+
+#typewriting{
+    position: relative;
+    z-index: 100;
+    color: white;
+    font-weight: 700;  
+    font-size: 1vw;
 }
 
 div.home{  
@@ -102,8 +103,6 @@ div.home{
         }
     }
     
-    
-
 figcaption.animate{
     display: flex;
     justify-content: center;
@@ -111,11 +110,11 @@ figcaption.animate{
 
 figcaption.animate p{
     color: white ;
-    font-weight: 900 !important;
+    font-weight: 900;
     font-size: 2rem;
     opacity: 0;
     animation: text 3s ease-in-out;
-    position: absolute;  
+    position: absolute;
 }
 
 figcaption.animate p:nth-child(1){
@@ -150,12 +149,10 @@ figcaption.animate p:nth-child(5){
 
     /*about section*/
 
-section#about{
-   
+section#about{  
     position: relative;
     margin: auto;
-    padding-top: 5vh;  
-      
+       
 }
 .outer-card{
     width:17vw;
@@ -177,8 +174,7 @@ div.about-img{
     margin: auto;
     z-index: -1;
     border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw; 
-     
+    border-top-right-radius: 2vw;
 }
 div.about-img:hover{
     
@@ -357,6 +353,9 @@ section#contact{
         padding-top: 2vh;  
         padding-bottom: 2vh;  
     }
+    #typewriting{
+        font-size: 2.5vw;
+    }
     .icon-nav{
         font-size: 2.4vw !important;
       }
@@ -411,6 +410,9 @@ section#contact{
     section{
         overflow-x: hidden;
     }
+    #typewriting{
+        font-size: 4.4vw;
+    }
     .icon-nav{
         font-size: 4.5vw !important;
       }
@@ -421,7 +423,7 @@ section#contact{
       box-shadow: 0 0 10px 2px blue(255, 255, 255, 0.8);     
     }
     section#home{
-      padding-bottom: 2vh;
+      padding-bottom: 3vh;
       
     }
     div.home{  
