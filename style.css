@@ -33,7 +33,7 @@ body{
   
     .navbar{
         position: sticky;
-        background-image: linear-gradient(rgb(6, 6, 16), rgb(28, 6, 61)); 
+        background-image: linear-gradient(rgb(6, 6, 17), rgb(13, 6, 107)); 
     }
     a.nav-link{
         margin-left: 2vw;
@@ -330,7 +330,7 @@ section#contact{
      #footer{
         
         height: auto;
-        background-image: linear-gradient( rgb(28, 6, 61), rgb(6, 6, 16));
+        background-image: linear-gradient( rgb(13, 6, 107), rgb(6, 6, 17)); 
         bottom: 0%;
      }
      i.bi{
