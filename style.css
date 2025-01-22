@@ -47,6 +47,7 @@ body{
         border-radius: 0.4vw;
         transition:0.5s ease;
     }
+    
 
 main{
     position: relative;
@@ -58,15 +59,13 @@ main{
     background-size: cover;  
     background-position: center; 
     scrollbar-width: none;
-    
- 
 }
 
            /*Home Section*/
 section#home{ 
     position: relative;
     padding-top: 10vh;
-    padding-bottom: 10vh; 
+    padding-bottom: 4vh; 
 }
 
 #typewriting{
@@ -199,9 +198,9 @@ div.about-img:hover{
 }
 
 div.about{
-    margin:auto;
+    margin: auto;
     margin-bottom: 0%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 div.about p{
@@ -214,6 +213,7 @@ button.cv{
 }
 
                 /*skills Section*/
+
 
 section#skills{
    
@@ -322,7 +322,7 @@ section#projects{
                 /*contact section*/
 
 section#contact{
-    padding-top: 5vh;  
+    padding-top: 4vh;  
 }
 
      /*section footer*/
@@ -420,7 +420,7 @@ section#contact{
       box-shadow: 0 0 10px 2px blue(255, 255, 255, 0.8);     
     }
     section#home{
-      padding-bottom: 3vh;
+      padding-bottom:  3vh;
       
     }
     div.home{  
