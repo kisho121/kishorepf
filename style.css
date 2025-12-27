@@ -346,11 +346,13 @@ main{
            /*Home Section*/
 
 div.profile-img{
-    width: 19vw;  
-    height: 23vw;
+    width: 16vw;  
+    height: 20vw;
+    background-color: rgba(13, 172, 225, 0.5) ;
     background-image:url(./images/profile.png);
     border: 1px solid white;
     border-radius: 50%;
+    
     background-size: cover;
     background-repeat: no-repeat; 
     box-shadow: 0 0 3px 1px blue(255, 255, 255, 0.8); 
@@ -365,8 +367,8 @@ div.profile-img:hover{
         box-shadow: 0 0 4px 2px white;
     }
     to {
-        box-shadow: 1px 1px 7px 1px black;
-        border: 1px solid black;
+        box-shadow: 1px 1px 7px 1px aqua;
+        border: 1px solid aqua;
     }
 }
 button.cv{   
