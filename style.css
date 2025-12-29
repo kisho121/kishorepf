@@ -27,6 +27,24 @@ body{
     font-style: normal;
     
   }
+  .marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee h4 {
+  display: inline-block;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
     /* start*/
      * {
@@ -36,9 +54,9 @@ body{
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Poppins", sans-serif;
             overflow-x: hidden;
-            background: linear-gradient(135deg, aqua 0%, #232D3F 100%);
+            background: linear-gradient(135deg, #232D3F 0%, #232D3F 100%);
         }
 
         /* Navbar */
@@ -98,7 +116,7 @@ body{
         }
 
         .hero-btn {
-            padding: 15px 40px;
+            margin-bottom: 15px;
             font-size: 1.1rem;
             color: white;
             transition: all 0.3s ease;
@@ -108,7 +126,7 @@ body{
 
         /* Content Section with Slide Effect */
         .content-section {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #a9bccf 0%, #57718d 100%);
             
         }
 
@@ -250,7 +268,7 @@ body{
         }
 
         .progress-bar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #525f77 0%, #0F0F0F 100%);
             border-radius: 10px;
             transition: width 1.5s ease;
         }
@@ -298,10 +316,11 @@ body{
 
         /* Footer */
         footer {
-            background:  #112A46 ;
+            background: linear-gradient(#232D3F 0%, #0F0F0F 100%);
             color: white;
             text-align: center;
             padding: 30px 0;
+            border-top: 1px solid grey;
         }
 
         .social-icons a {
@@ -339,7 +358,7 @@ body{
 
 main{
     position: relative; 
-     background: linear-gradient(135deg, #7e8e9f 0%, #112A46 100%);
+     background: linear-gradient(135deg, #293244 0%, #232D3F 100%);
     scrollbar-width: none;
 }
 
@@ -348,10 +367,11 @@ main{
 div.profile-img{
     width: 16vw;  
     height: 20vw;
-    background-color: rgba(13, 172, 225, 0.5) ;
+    background-color: rgba(213, 227, 232, 0.5) ;
     background-image:url(./images/profile.png);
-    border: 1px solid white;
+    border: 1px solid rgb(45, 45, 45);
     border-radius: 50%;
+    filter: brightness(1.1);
     
     background-size: cover;
     background-repeat: no-repeat; 
@@ -359,16 +379,16 @@ div.profile-img{
     animation: pulse 1.5s infinite alternate;
 }
 div.profile-img:hover{
-    filter: brightness(1.2);
+    filter: brightness(1.4);
 }
 
 @keyframes pulse {
     from {
-        box-shadow: 0 0 4px 2px white;
+        box-shadow: 0 0 4px 2px rgb(45, 45, 45);
     }
     to {
-        box-shadow: 1px 1px 7px 1px aqua;
-        border: 1px solid aqua;
+        box-shadow: 1px 1px 7px 1px black;
+        border: 1px solid black;
     }
 }
 button.cv{   
@@ -421,6 +441,40 @@ figcaption.animate p:nth-child(5){
 
 
                /* project Section*/
+/* Image */
+.project-img {
+  width: 200px;
+}
+
+/* Button */
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #95ff00, #00ff62);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* AUTO GLOW EFFECT */
+.glow {
+  animation: glowPulse 2s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 68, 0.768);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(187, 255, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 255, 106, 0.6);
+  }
+}
+
 
 
 section#projects{ 
@@ -441,7 +495,7 @@ section#projects{
 
 .medium-device{
     width: 92%;
-    height: 73%;
+    height: 71%;
     transition:transform 0.3s ease-in-out;
 }
 
@@ -449,7 +503,7 @@ section#projects{
     transform: scale(1.01);  
 }
 .small-device{
-    width: 96%;
+    width: 97%;
     height: 95%;
     transition: transform 0.3s ease-in-out;
 }
@@ -465,12 +519,12 @@ section#contact{
 
      /*section footer*/
 
-     #footer{
+     /* #footer{
         
         height: auto;
         background-image: linear-gradient( rgb(13, 6, 107), rgb(6, 6, 17)); 
         bottom: 0%;
-     }
+     } */
      i.bi{
         font-size: 1.2vw;
         border-radius: 60%;
@@ -590,6 +644,9 @@ section#contact{
     }  
     i.bi{
         font-size: 4.5vw;
+    }
+    .cta-btn{
+        font-size: 12px;
     }
   }
   
