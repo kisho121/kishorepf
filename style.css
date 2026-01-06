@@ -27,24 +27,7 @@ body{
     font-style: normal;
     
   }
-  .marquee {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.marquee h4 {
-  display: inline-block;
-  animation: scroll 15s linear infinite;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
+ 
 
     /* start*/
      * {
